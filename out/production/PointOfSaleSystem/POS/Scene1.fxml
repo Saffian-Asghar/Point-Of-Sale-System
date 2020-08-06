@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="POS.Scene1">
+   <children>
+      <Pane prefHeight="84.0" prefWidth="800.0" style="-fx-background-color: #489ee7;">
+         <children>
+            <ImageView cache="true" fitHeight="59.0" fitWidth="49.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Resources/cart.png" />
+               </image>
+            </ImageView>
+            <Label graphicTextGap="10.0" layoutX="73.0" layoutY="16.0" prefHeight="49.0" prefWidth="489.0" text="Baig's POS System" textFill="WHITE">
+               <font>
+                  <Font name="Rockwell Bold Italic" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="77.0" prefHeight="523.0" prefWidth="71.0" style="-fx-background-color: #373942;" />
+      <Pane layoutX="67.0" layoutY="77.0" prefHeight="523.0" prefWidth="734.0" style="-fx-background-color: ffffff;">
+         <children>
+            <TextField fx:id="customerName" layoutX="174.0" layoutY="166.0" prefHeight="26.0" prefWidth="355.0" promptText="Type Customer Name" />
+            <TextField fx:id="custNumber" layoutX="174.0" layoutY="292.0" prefHeight="26.0" prefWidth="355.0" promptText="Type Mobile Number" />
+            <Button fx:id="customerButton" layoutX="459.0" layoutY="393.0" mnemonicParsing="false" onAction="#handleclick" prefHeight="32.0" prefWidth="71.0" text="Next" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
